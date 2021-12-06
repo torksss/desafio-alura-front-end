@@ -29,22 +29,30 @@
                     <li><img src="img/icone-comuni.svg" alt="icone-comuni" class="icone-comuni"><a class="" href="#">Comunidade</a></li>
                 </ul>  
             </nav>
-
-            <div class="areaCodigo">
-                <label for="mensagem"></label>
-                <textarea cols="70" rows="10" id="mensagem" class=""></textarea>
-            </div>
+            <section class="section-codigo">
+                <div class="areaCodigo">
+                    <div class="janela-codigo">
+                        <label for="mensagem"></label>
+                        <textarea cols="70" rows="20" id="mensagem" class=""></textarea>
+                    </div>
+                </div>
+                <input type="button" value="Visualizar com Highligh">
+            </section>
 
             <div class="menuProj">
-                <h3>Menu</h3>
-                <input type="text" placeholder="Nome do seu Projeto">
-                <textarea cols="10" rows="3"></textarea>
-                <h3>PERSONALIZAÇÃO</h3>
-                <select>
-                    <option>Javascript</option>
-                    <option>MySQL</option>
-                    <option>NodeJS</option>
-                </select>
+                <div class="seuProjeto">
+                    <h3>SEU PROJETO</h3>
+                    <input type="text" placeholder="Nome do seu Projeto">
+                    <textarea cols="21" rows="5" placeholder="Descrição do Projeto"></textarea>
+                </div>
+                <div class="projPersonalisa">
+                    <h3>PERSONALIZAÇÃO</h3>
+                    <select>
+                        <option>Javascript</option>
+                        <option>MySQL</option>
+                        <option>NodeJS</option>
+                    </select>
+                </div>
                 <input type="button" value="Salvar Projeto">
             </div>
 
