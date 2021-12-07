@@ -14,6 +14,11 @@ header {
     border-radius: 40px 40px 0px 0px;
 }
 
+.menu-mobile {
+    visibility: hidden;
+    position: absolute;
+}
+
 .Logo{
     display: flex;
     flex-flow: column;
@@ -27,9 +32,10 @@ header {
 .searchbox {
     display: flex;
     width: 700px;
-    height: 56px;
     background: rgba(255, 255, 255, 0.16);
     border-radius: 8px;
+    border-style: none;
+    padding-left: 1em;
 }
 
 .profile {
@@ -106,8 +112,6 @@ header {
     justify-content: center;
     padding: 2em;
     background-color: turquoise;
-    width: 752px;
-    height: 366px;
     border-radius: 8px;
 }
 
@@ -115,11 +119,10 @@ header {
     display: flex;
     justify-content: center;
     flex-flow: column;
-    width: 100%;
-    height: 100%;
     border-radius: 8px;
     background-color: black;
     box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
+    padding: 1em;
 }
 
 .areaCodigo textarea {
@@ -132,6 +135,7 @@ header {
     display: flex;
     flex-flow: column;
     justify-content: center;
+
 }
 
 .section-codigo input {
@@ -143,12 +147,21 @@ header {
     color: white;
     word-spacing: 0.4em;
     font-family: 'Montserrat', sans-serif;
+    border-style: none;
+    margin-top: 3em;
 }
 
 .menuProj {
     display: flex;
     flex-flow: column;
 
+}
+
+.menuProj input {
+    background: #5081FB;
+    border-style: none;
+    border-radius: 8px;
+    height: 56px;
 }
 
 .seuProjeto {
@@ -159,11 +172,16 @@ header {
 
 .seuProjeto input{
     height: 40px;
+    margin: 0.7em 0 0.7em 0;
+    padding: 0 0 0 1em;
+    background: rgba(255, 255, 255, 0.16);
 }
 
-.seuProjeto input, .seuProjeto textarea, .projPersonalisa select {
+.seuProjeto textarea  {
     background: rgba(255, 255, 255, 0.16);
     border-radius: 8px;
+    border-style: none;
+    padding: 1em 0 0 1em;
 }
 
 .projPersonalisa {
@@ -173,8 +191,123 @@ header {
 }
 
 .projPersonalisa select {
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    border-style: none;
     height: 40px;
+    color: white;
+    padding-left: 1em;
 }
 
-.menuProj input {
+.projPersonalisa img {
+    padding: 0.6em 0 2em 0;
+}
+
+.icone-1, .icone-2, .icone-3 {
+    width: 12px;
+    height: 12px;
+}
+
+.icones-janela-codigo {
+    display: flex;
+
+}
+.icone-1 {
+    background: #FF5F56;
+    border-radius: 50px;
+    margin-left:0.5em;
+    margin-bottom: 0.7em;
+}
+
+.icone-2 {
+    background: #FFBD2E;
+    border-radius: 50px;
+    margin-left:0.5em;
+}
+
+.icone-3 {
+    background: #27C93F;
+    border-radius: 50px;
+    margin-left:0.5em; 
+}
+
+
+/* mobile */
+@media screen and (max-width: 768px) {
+    
+    header {
+        display: flex;
+        padding: 15px 32px 15px 32px;
+    }
+
+    .searchbox {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .menu-mobile {
+        visibility: visible;
+        position: static;
+        display: flex;
+    }
+
+    .menu-mobile img {
+        padding: 0 1em 0 1em;
+    }
+
+    .profile {
+        visibility: hidden;
+        width: 0;
+    }
+
+    main {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        padding: 15px;
+    }
+
+
+    .menu-nav {
+        display: flex;
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .areaCodigo {
+        display: flex;
+        justify-content: center;
+        background-color: turquoise;
+        padding: 1em;
+        border-radius: 8px;
+    }
+
+    .section-codigo {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .menu-nav h3, .menuProj h3 {
+        color: #FFFFFF;
+        padding: 1em 0 1em 0;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.4em;
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
+    
+    }
+
+    .seuProjeto {
+        padding-top: 3em;
+    }
+
+    .seuProjeto input{
+        margin: 0 0 0.7em 0;
+    }
+    
 }
