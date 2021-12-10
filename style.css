@@ -64,7 +64,6 @@ header {
 .menu-nav ul li {
     display: flex;
     padding: 0.8em 0.8em 0 0;
-    width: 220px;
 }
 
 .menu-nav ul li a{
@@ -113,6 +112,7 @@ header {
     padding: 2em;
     background-color: turquoise;
     border-radius: 8px;
+    margin-left: 4em;
 }
 
 .areaCodigo .janela-codigo {
@@ -129,6 +129,9 @@ header {
     color: white;
     background-color:black;
     border-style: none;
+    resize: "none";
+    width: 27rem;
+    height: 17rem;
 }
 
 .section-codigo {
@@ -140,8 +143,6 @@ header {
 
 .section-codigo input {
     height: 56px;
-    left: 344px;
-    top: 526px;
     background: rgba(80, 129, 251, 0.08);
     border-radius: 8px;
     color: white;
@@ -149,6 +150,7 @@ header {
     font-family: 'Montserrat', sans-serif;
     border-style: none;
     margin-top: 3em;
+    margin-left: 4.7em;
 }
 
 .menuProj {
@@ -280,6 +282,7 @@ header {
         background-color: turquoise;
         padding: 1em;
         border-radius: 8px;
+        margin: 0;
     }
 
     .section-codigo {
@@ -287,6 +290,16 @@ header {
         flex-flow: column;
         justify-content: center;
     }
+
+    .areaCodigo textarea {
+        width: 23rem;
+        height: 15rem;
+    }
+
+    .section-codigo input {
+        margin-left: 0;
+    }
+    
 
     .menu-nav h3, .menuProj h3 {
         color: #FFFFFF;
